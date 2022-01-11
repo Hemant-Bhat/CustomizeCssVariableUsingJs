@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blur-radius: 0px;
+    --base-color: #f2ff00;
+    --spacing: 10px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: rgb(17, 17, 17);
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+.container .controls{
+    margin: 20px 0;
+}
+.container .controls label{
+    margin: 0 10px;
+}
+.container div img{
+    width: 300px;
+    padding: var(--spacing);
+    background: var(--base-color);
+    filter: blur(var(--blur-radius));
+}
+.base-color{
+    color: var(--base-color);
+}
+
+@media (max-width: 630px) {
+    .container .controls label{
+        display: block;
+        margin: 10px;
+    }
+    
+}
